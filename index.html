@@ -1,11 +1,14 @@
 <html>
+  <head>
+    <p id="demo"></p>
+  </head>
   <input id="clickMe" type="button" value="clickme" onclick="doFunction()" />
   <script>
     function myFunction() {
       int[i] = Math.floor(Math.random() * 500);
       i++;
       for(int j = 0; j < nums.length; j++){
-        document.write("Balls");
+        document.getElementById("demo").innerHTML = nums[j];
       }
     }
   </script>
