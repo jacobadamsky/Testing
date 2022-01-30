@@ -10,6 +10,11 @@
         var input = document.getElementById("userInput").value;
         i++;
         nums[i] = input;
-        alert(nums[i]);
+		if(i == 0){
+			alert(nums[i]);
+		}
+		else {
+			alert(nums[i - 1]);
+		}
     }
 </script>
