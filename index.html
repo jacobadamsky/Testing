@@ -1,14 +1,9 @@
-<html>
-  <script>
-    var i = [];
+<form id="form" onsubmit="return false;">
+    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+</form>
 
-    $( document ).ready(function() {        
-        $('.sal').each(function() {
-                $(this).click(function(e) {        
-                     i.push($(this).val());
-                    console.log(i);
-                }); 
-         });
-    });
-  </script>
-</html>
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}
