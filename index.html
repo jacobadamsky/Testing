@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Button Writer</title>
+<script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+</head>
+
+<body>
+<button id="button1" type="button">Write to File</button>
+</body>
+<script type='text/javascript'>
+$('#button1').click(function(){
+ $.ajax({
+ type: "POST",
+ url: "test.php",
+ data: "",
+ success: function(msg){
+     alert(msg);
+ },
+ error: function(XMLHttpRequest, textStatus, errorThrown) {
+    alert("Some error occured");
+ }
+ });
+});
+</script>
+</html>
